@@ -8,7 +8,7 @@ intents.message_content = True
 intents.members = True  # necesario para algunos comandos
 
 bot = commands.Bot(command_prefix="!", intents=intents)
-
+bot.remove_command("help")
 # ==================== LISTA DE INSULTOS Y RESPUESTAS ====================
 insultos = [
     "pendejo", "idiota", "retrasado", "imbécil", "estupido", "estúpido",
